@@ -36,6 +36,7 @@ Setup Instructions
  
 	2.	Create and activate a virtual environment:  
  <img width="170" alt="image" src="https://github.com/user-attachments/assets/d40df283-bc7b-432b-870d-794f0fef7eac" />  
+ 
  		On Windows:
    <img width="169" alt="image" src="https://github.com/user-attachments/assets/c364f73a-ea64-420f-9afe-f53300515d78" />
 
