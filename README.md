@@ -32,23 +32,23 @@ For a complete list of dependencies, refer to the `requirements.txt` file.
 Setup Instructions  
 
 	1.	Clone the repository:  
- <img width="589" alt="image" src="https://github.com/user-attachments/assets/90e566fe-5aa3-4b33-a276-5e0eef9b94af" />  
+ <img width="589" alt="image" src="https://github.com/user-attachments/assets/90e566fe-5aa3-4b33-a276-5e0eef9b94af" />   
  
 	2.	Create and activate a virtual environment:  
- <img width="170" alt="image" src="https://github.com/user-attachments/assets/d40df283-bc7b-432b-870d-794f0fef7eac" />  
+ <img width="226" alt="image" src="https://github.com/user-attachments/assets/45876e0d-2270-4c9b-9ab5-7da250f03614" />   
  
  		On Windows:
-   <img width="169" alt="image" src="https://github.com/user-attachments/assets/c364f73a-ea64-420f-9afe-f53300515d78" />
+   <img width="222" alt="image" src="https://github.com/user-attachments/assets/cdb75060-dbf1-4d9f-9a5e-13ed3bdeeefa" />  
 
  	3.	Install the required dependencies:  
-  <img width="243" alt="image" src="https://github.com/user-attachments/assets/8e450c06-38a3-4962-a11f-e0b2e5f27b8d" />  
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/faebe0ce-0443-4e75-9e6e-164b2bd70ea7" />  
 
   	4.	Set up your News API key:  
 		•	Sign up for a free API key at https://newsapi.org/  
 		•	Replace `NEWS_API_KEY` in `api.py` with your actual API key. 
   
   	5.	Run the application:  
-   <img width="292" alt="image" src="https://github.com/user-attachments/assets/0e2bcc19-0bc2-44d1-b2da-6f30f7edefbc" />  
+   <img width="207" alt="image" src="https://github.com/user-attachments/assets/97239afe-935e-4dba-9fb8-3d108974bad7" />  
    
 Implementation Details  
 
@@ -91,8 +91,8 @@ The sentiment analysis is performed using the TextBlob library, which is a simpl
 
 Sentiment Classification  
 
-Positive: If the sentiment score is greater than 0.
-Negative: If the sentiment score is less than 0.
+Positive: If the sentiment score is greater than 0.  
+Negative: If the sentiment score is less than 0.  
 Neutral: If the sentiment score equals 0.  
 
 Text-to-Speech (TTS) Model  
@@ -130,7 +130,7 @@ Parameters:
 
 Example API Request:  
 
-<img width="721" alt="image" src="https://github.com/user-attachments/assets/cd13ff94-0458-4647-bcb8-e49d13012a9a" />  
+<img width="721" alt="image" src="https://github.com/user-attachments/assets/071bec8b-7b3a-41d7-9dbc-44271b0c6c81" />  
 
 Postman Configuration:  
 
