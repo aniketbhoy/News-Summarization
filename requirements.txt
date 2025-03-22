@@ -1,0 +1,9 @@
+requests
+textblob
+gTTS
+deep_translator
+scikit-learn
+numpy
+streamlit
+newspaper3k
+nltk
