@@ -76,6 +76,31 @@ API Development
 
 The communication between the frontend and backend happens via APIs defined in `api.py`. These APIs handle news fetching, sentiment analysis, and text-to-speech conversion.    
 
+Model Details
+
+Summarization Model  
+
+The summarization functionality of the application relies on TF-IDF (Term Frequency-Inverse Document Frequency) combined with KMeans clustering.  
+
+	•	TF-IDF is used to vectorize the text data (news article summaries) by transforming text into numerical vectors based on word frequency and its importance within the entire document set.  
+	•	KMeans clustering is used to cluster articles into different topics based on their vectorized summary data. It helps in grouping articles that are related to similar topics.  
+
+Sentiment Analysis Model  
+
+The sentiment analysis is performed using the TextBlob library, which is a simple library for processing textual data. The sentiment polarity score is used to determine the overall sentiment of the article's summary.  
+
+Sentiment Classification  
+
+Positive: If the sentiment score is greater than 0.
+Negative: If the sentiment score is less than 0.
+Neutral: If the sentiment score equals 0.  
+
+Text-to-Speech (TTS) Model  
+
+The Google Text-to-Speech (gTTS) library is used to convert the news summaries into audio. This library provides an easy way to convert text to speech and supports multiple languages, including Hindi.
+
+gTTS generates the audio file from the text and saves it as an MP3 file that can be played in the browser via Streamlit.
+
 File Structure  
 	•	`app.py`: Main application script  
 	•	`api.py`: API definitions for backend communication  
@@ -91,11 +116,34 @@ Usage
 	4.	View the structured report with article summaries, sentiments, and comparative analysis  
 	5.	Listen to the Hindi TTS output summarizing the sentiment report  
  
+NewsAPI Integration  
+
+The NewsAPI is used to fetch the latest news articles related to a specific company. Here's how you can use it and test the endpoint via Postman or any other tool:  
+
+URL: https://newsapi.org/v2/everything  
+
+Parameters:  
+
+	•	q=<company_name>: Replace <company_name> with the company name you want to search for.  
+	•	apiKey=<your_api_key>: Replace <your_api_key> with your actual NewsAPI key.  
+	•	language=en: Set the language to English to fetch English articles.  
+
+Example API Request:  
+
+<img width="721" alt="image" src="https://github.com/user-attachments/assets/cd13ff94-0458-4647-bcb8-e49d13012a9a" />  
+
+Postman Configuration:  
+
+	•	Set the request method to GET.  
+	•	Enter the URL as above.  
+	•	Click Send to retrieve the latest articles related to Microsoft  
+	•	You'll receive a JSON response with articles that you can further process.  
+
 Limitations and Assumptions  
 
 	•	The application assumes a stable internet connection for fetching news and API access.
-	•	Sentiment analysis accuracy may vary depending on the complexity of the news content.
-	•	The application is designed for English news articles, with translation to Hindi for TTS.  
+	•	The sentiment analysis is basic and might not be as accurate for complex texts.  
+	•	The application is designed for English news articles, with translation to Hindi for TTS. The translation may not be perfectly accurate.  
  
 Deployment  
 The application is deployed on Hugging Face Spaces. You can access it at https://huggingface.co/spaces/hugginggoku/company-sentiment-analysis
