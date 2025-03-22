@@ -36,13 +36,16 @@ Setup Instructions
  
 	2.	Create and activate a virtual environment:  
  <img width="170" alt="image" src="https://github.com/user-attachments/assets/d40df283-bc7b-432b-870d-794f0fef7eac" />  
+ 		On Windows:
+   <img width="169" alt="image" src="https://github.com/user-attachments/assets/c364f73a-ea64-420f-9afe-f53300515d78" />
 
  	3.	Install the required dependencies:  
   <img width="243" alt="image" src="https://github.com/user-attachments/assets/8e450c06-38a3-4962-a11f-e0b2e5f27b8d" />  
 
   	4.	Set up your News API key:  
 		•	Sign up for a free API key at https://newsapi.org/  
-		•	Replace `NEWS_API_KEY` in `api.py` with your actual API key.  
+		•	Replace `NEWS_API_KEY` in `api.py` with your actual API key. 
+  
   	5.	Run the application:  
    <img width="292" alt="image" src="https://github.com/user-attachments/assets/0e2bcc19-0bc2-44d1-b2da-6f30f7edefbc" />  
    
