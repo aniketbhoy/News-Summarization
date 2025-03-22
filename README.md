@@ -1,4 +1,4 @@
-# Company New Summarization and Sentiment Analysis
+# Company News Summarization and Sentiment Analysis
 
 Overview  
 
