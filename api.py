@@ -6,7 +6,7 @@ from deep_translator import GoogleTranslator
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 
-# API Key for News API
+# API Key for News API (replace with the actual key)
 NEWS_API_KEY = "##############################"
 
 # fetch_news Function
