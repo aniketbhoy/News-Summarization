@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 
 # API Key for News API (replace with the actual key)
-NEWS_API_KEY = "##############################"
+NEWS_API_KEY = os.getenv('NEWS_API_KEY')
 
 # fetch_news Function
 def fetch_news(company):
