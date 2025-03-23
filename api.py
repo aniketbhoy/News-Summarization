@@ -5,6 +5,7 @@ from gtts import gTTS
 from deep_translator import GoogleTranslator
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
+import os
 
 # API Key for News API (replace with the actual key)
 NEWS_API_KEY = os.getenv('NEWS_API_KEY')
